@@ -1,0 +1,79 @@
+{
+    "name": "Controls",
+    "maps": [
+        {
+            "name": "Developer",
+            "id": "9c55acbc-8fda-4949-8f9b-60fc82c44e77",
+            "actions": [
+                {
+                    "name": "ToggleConsole",
+                    "type": "Button",
+                    "id": "761cf591-6a37-4cd0-8551-ec7f4d79e860",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "d8450ffd-7a04-41a8-b4e7-8a384ef32564",
+                    "path": "<Keyboard>/backquote",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "Keyboard & Mouse",
+                    "action": "ToggleConsole",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "CharacterController",
+            "id": "16de0352-c2cb-4326-a9ad-3d222f4f1847",
+            "actions": [
+                {
+                    "name": "TargetAction",
+                    "type": "Button",
+                    "id": "14f42733-d266-4e6c-ba07-7f7f6e22ec41",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "070b657f-35dc-4bc2-b94d-1e204b7bef70",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "Keyboard & Mouse",
+                    "action": "TargetAction",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Keyboard & Mouse",
+            "bindingGroup": "Keyboard & Mouse",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Mouse>",
+                    "isOptional": true,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
